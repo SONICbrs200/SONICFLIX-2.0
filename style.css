@@ -1,0 +1,225 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --verde-texto: rgb(9, 95, 73);
+    --cinza-secundario: gray;
+    --botao-azul: blue;
+    --cor-de-fundo: black;
+    --fonte-titulo:'Faster One';
+    --fonte-principal:'Kanit';
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    align-items: center;
+    text-align: center;
+    /*no original era content*/
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0% 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.img__logo {
+    margin: 1em 0 2em 0;
+    width: 350px;
+    height: auto;
+}
+
+.container__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 34px;
+    font-weight: 100;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 65%;
+    border: 2px solid var(--branco-principal);
+    border-radius: 10%;
+    opacity: 70%;
+    margin: 0 10em;
+    background-color: var(--branco-principal);
+}
+
+.secundario {
+    background-image: url("https://archive.sonicstadium.org/wp-content/uploads/2020/07/Hedgehog-Hills-895x375.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    align-items: center;
+    margin: 0 10em;
+    /*Devido a indisciplina e defasagem para preencher a imagem de background por completo, a imagem, além de duplicada, permanecerá cortada.*/
+
+}
+
+.terciario {
+    background-image: url("img/background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    align-items: center;
+    margin: 0 10em;
+}
+
+.terciario_imagem {
+    width:83.19%;
+    height:100%;
+    opacity: 0%;
+    position: absolute;
+}
+
+.terciario_imagem:hover {
+    opacity: 100%;    
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--verde-texto);
+    margin-bottom: 0.1em;
+    text-align: center;
+    background-color: var(--branco-principal);
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+    text-align: center;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.secundario__botao {
+    display: inline-block;
+    /*margin-top: 1em;*/
+    margin: 1em 14em;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.feedback__botao {
+    align-self: flex-start;
+    width: 0;
+    height: 0;
+}
+
+.imagem__feedback {
+    width: 50p x;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__imagem {
+    width: 150px;
+    height: 150px;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    margin-top: 3em;
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__logo {
+ width: 10%;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{
+    font-size: 32px;
+    color: var(--cinza-secundario);
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.lista__link a:hover {
+ color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: var(--branco-principal);
+}
+
+.container__botao:hover {
+    background-color: aqua;
+    border-color: var(--cor-de-fundo);
+    color: darkgoldenrod;
+}
