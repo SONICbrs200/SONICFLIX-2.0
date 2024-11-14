@@ -78,7 +78,6 @@ body{
     border-radius: 10%;
     opacity: 70%;
     margin: 0 10em;
-    background-color: var(--branco-principal);
 }
 
 .secundario {
@@ -108,9 +107,19 @@ body{
     position: absolute;
 }
 
-.terciario_imagem:hover {
-    opacity: 100%;    
+.terciario_imagem:hover{
+    opacity: 100%;
+  animation: fadeIn 5s;
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }   
 
 .descricao__titulo {
     font-weight: 700;
